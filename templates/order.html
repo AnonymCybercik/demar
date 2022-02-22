@@ -37,19 +37,23 @@
               role="menu"
               aria-labelledby="dLabel"
             >
-              <div class="dropdow">
+             <div class="dropdow">
                 <li><a href="{% url 'main:contact' %}">Контакты</a></li>
+              </div><div class="dropdow">
+                <li><a href="{% url 'main:about' %}">О нас</a></li>
               </div>
               <hr />
               <div class="dropdow">
-                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="{% url 'main:gallery' %}">Галерея</a></li>
               </div>
             </ul>
           </div>
         </div>
         <ul class="header" id="ul">
           <li><a href="{% url 'main:contact' %}">Контакты</a></li>
-          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="{% url 'main:gallery' %}">Галерея</a></li>
+          <li><a href="{% url 'main:about' %}"> О нас</a></li>
+
         </ul>
         <div class="li-cen">
           <li class="glry">
@@ -89,7 +93,7 @@
           </li>
         </div>
         <div class="navbar-end">
-          <a href="cart.html"
+          <a href="{% url 'main:cart' %}"
             ><img class="cart" src="/static/images/cart.png" alt=""
           /></a>
           <button type="button" class="search-btn">
@@ -305,19 +309,17 @@
   
    <div class="mapouter">
   <div class="gmap_canvas">
-    <iframe width="100%" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-    <a href="https://fmovies-online.net">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5999.3963544126!2d69.18994!3d41.250132!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfad5642e5694a55a!2zNDHCsDE1JzAwLjUiTiA2OcKwMTEnMjMuOCJF!5e0!3m2!1sru!2s!4v1645291422672!5m2!1sru!2s" width="1348" height="1024" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
     </a>
     <br>
 
     </div>
-  </div>
-    <<div class="footer-section">
+  </div>    <<div class="footer-section">
       <div class="footers">
         <div class="footer-left">
           <img class="logofooter" src="/static/images/ащщеукдщпщ.png" alt="" />
-          <h6 class="copy">©Demar 2021</h6>
+          <h6 class="copy">©Demar 2022</h6>
         </div>
         <div class="footer-center">
           <h1 class="footer-text"><a style="color: #fff;" href="{% url 'main:contact' %}">Контакт</a></h1>
@@ -327,8 +329,8 @@
           </h1>
           <h1 class="footer-text"><a style="color: #fff; " href="{% url 'main:plitki' %}"> Кафель </a></h1>
         </div>
-        <div class="footer-right">
-          <h2 class="footer-phone">+998 (99) 555-25-89</h2>
+         <div class="footer-right">
+          <h2 class="footer-phone">+998 (99) 400-07-70</h2>
           <div class="footer-left-first">
             <h2 class="footer-title">Адрес</h2>
             <h6 class="footer-para">Чиланзарский район, 8 улица Аль-Хорезми</h6>
@@ -337,6 +339,13 @@
             <h2 class="footer-title">E-mail</h2>
             <h6 class="footer-para">Demar.support.gmail.com</h6>
           </div>
+        </div>
+          <a href="https://www.facebook.com/DemarPlus/"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.google.com/demar.uz"><i class="fa fa-google-plus"></i></a>
+          <a href="https://www.instagram.com/demar_plus"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
         </div>
       </div>
     </div>

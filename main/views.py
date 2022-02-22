@@ -35,7 +35,8 @@ def cart(request):
 def plitki(request):
 	products = Product.objects.all().order_by('-id')
 	return render(request,'catalogStone.html',{'products':products})
-
+def about(request):
+	return render(request,'about.html')
 def laminat(request):
 	products = Product.objects.all().order_by('-id')
 	return render(request,'catalogLaminat.html',{'products':products})
@@ -110,9 +111,12 @@ def cart_delete(request):
 	mainCart.save()
 	return JsonResponse({'main_price':mainCart.all_price})
 
+
+
+
 import telebot
-TOKEN = '5189245732:AAHLRbxCGDZmrZZtUQaEgPWQTcuSS3IACGQ'
-chat_id = 696007117
+TOKEN = '5140670124:AAE4vNcnkQ9woUmBEOO3dJBQBZeoy_m0b0c'
+chat_id = 1614757564
 tb = telebot.TeleBot(TOKEN)
 
 

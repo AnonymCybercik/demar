@@ -1,3 +1,9 @@
+
+
+
+
+
+
 $('button.stone-btn').on('click', function(){
     var $button = $(this)
     var $product_id = $(this).data('id')

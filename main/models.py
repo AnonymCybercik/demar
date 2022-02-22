@@ -41,6 +41,7 @@ class Product(models.Model):
     category = models.ForeignKey(Category,related_name='products',on_delete=models.CASCADE)
     name = models.CharField(max_length=200, db_index=True)
     slug = models.SlugField(max_length=200, db_index=True)
+    color = models.CharField('Rangi',max_length=200)
     image = models.ImageField(upload_to='product_images/',blank=True)
     description = models.TextField(blank=True)
     price = models.FloatField()
